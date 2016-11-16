@@ -27,6 +27,15 @@
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value="com.sudo_code.friendswithdeficits.FWDActivity"/>
         </activity>
+        <activity
+                android:name=".FriendActivity"
+                android:label="@string/title_activity_friend"
+                android:parentActivityName=".FWDActivity"
+                android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.sudo_code.friendswithdeficits.FWDActivity"/>
+        </activity>
     </application>
 
 </manifest>

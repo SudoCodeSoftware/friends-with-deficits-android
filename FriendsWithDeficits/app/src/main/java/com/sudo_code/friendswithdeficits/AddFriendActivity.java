@@ -1,5 +1,6 @@
 package com.sudo_code.friendswithdeficits;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -24,7 +25,18 @@ public class AddFriendActivity extends AppCompatActivity {
 
     public void addFriend(View view) {
         String name = nameTxt.getText().toString();
-        Toast.makeText(AddFriendActivity.this, "Added " + name, Toast.LENGTH_SHORT).show();
+        if (!name.matches("")) {
+            closeAction(name);
+        }
+        else {
+            Toast.makeText(AddFriendActivity.this, "Name field cannot be blank", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void closeAction(String name) {
+        Intent intent = new Intent();
+        intent.putExtra("NEW_FRIEND_NAME", name);
+        setResult(RESULT_OK, intent);
         finish();
     }
 }

@@ -10,14 +10,15 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         android:paddingBottom="@dimen/activity_vertical_margin"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/activity_fwd"
-        tools:context="com.sudo_code.friendswithdeficits.FWDActivity">
+        tools:showIn="@layout/activity_friend"
+        tools:context="com.sudo_code.friendswithdeficits.FriendActivity">
 
-    <ListView
+    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/friendsLv"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"/>
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="No Debts"
+            android:id="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
 </RelativeLayout>

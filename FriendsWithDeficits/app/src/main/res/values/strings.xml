@@ -2,4 +2,5 @@
     <string name="app_name">Friends With Deficits</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_add_friend">Add a Friend</string>
+    <string name="title_activity_friend">Friend</string>
 </resources>
